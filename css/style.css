@@ -1,0 +1,296 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 10000px;
+}
+
+
+a{
+    text-decoration: none;
+}
+button,input:focus{
+    box-shadow: #fff;
+    outline: none;
+    border: none;
+}
+ul,li{
+    list-style: none;
+}
+
+/*******************************    Start Navbar     *******************************/
+.navbar{
+    background-color: rgba(0,0,0,0.7);
+}
+.navbar .navbar-brand{
+    font-size: 30px;
+    font-weight: 500;
+    font-family: serif;
+}
+.navbar .navbar-brand::first-letter{
+    font-size: 40px;
+    color: #0083ff;
+    font-weight: bold;
+}
+.navbar .collapse .links .nav-item{
+    position: relative;
+    margin-right: 20px;
+    width: fit-content;
+    border-radius: 8px;
+}
+.navbar .collapse .links .nav-item .nav-link{
+    color: #fff;
+    border-radius: 10px;
+    padding: 8px 15px;
+    transition: 0.3s ease-in;
+}
+
+.navbar .collapse .links .nav-item .active{
+    color: #fff;
+    background-color: #0083ff;
+}
+.navbar .collapse .links .nav-item :hover{
+    background-color: #0083ff;
+ }
+.navbar .collapse .icons .fa-cart-plus{
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 40px;
+    font-size: 15px;
+    background-color: #0083ff;
+    transition: 0.4s;
+}
+.navbar .collapse .icons .fa-cart-plus:hover{
+    background-color: #0083ff;
+}
+
+
+
+
+
+/*******************************    Emd Navbar     *******************************/
+
+
+/*******************************    start Header Section    *******************************/
+section.header{
+    width: 100%;
+    height: 850px;
+    position: relative;
+    background: url(/img/animy.png) no-repeat center center;
+    background-size: cover;
+    overflow: hidden;
+    z-index: 2;
+}
+section.header .info{
+    z-index: 999;
+}
+section.header .info h3{
+    margin-top: 80px;
+    font-size: 40px;
+    font-family: serif;
+}
+section.header .info h3 span.hi{
+    margin-top: 80px;
+    font-size: 60px;
+    color: #0083ff;
+}
+section.header .info p{
+    margin-top: 20px;
+    margin-bottom:50px;
+}
+section.header .info a{
+    font-size: 20px;
+    padding: 8px 25px;
+    border: 1px solid #fff;
+    color: #fff;
+    margin-right: 10px;
+    font-weight: 500;
+    transition: 0.4s ease-in-out;
+    border-radius: 8px;
+}
+section.header .info .signin{
+    background-color: #0083ff;
+}
+section.header .info .signin:hover{
+    background-color: #0c5294;
+}
+section.header .info .signup:hover{
+    background-color: #0083ff;
+}
+section.header .info .btn-search{
+    width: 50%;
+    margin: 20px auto;
+}
+
+@media (max-width : 767px){
+    section.header .info h3{
+        margin-top: 80px;
+        font-size: 25px;
+    }
+    section.header .info h3 span.hi{
+        margin-top: 80px;
+        font-size: 40px;
+        color: #0083ff;
+    }
+    section.header .info p{
+        font-size: 16px;
+    }
+    section.header .info a{
+        font-size: 16px;
+        padding: 8px 15px;
+        border: 1px solid #fff;
+        color: #fff;
+        margin-right: 10px;
+        font-weight: 500;
+        transition: 0.4s ease-in-out;
+        border-radius: 8px;
+    }
+    section.header .info .signin{
+        background-color: #0083ff;
+    }
+    section.header .info .signin:hover{
+        background-color: #0c5294;
+    }
+    section.header .info .signup:hover{
+        background-color: #0083ff;
+    }
+    section.header .info .btn-search{
+        width: 100%;
+    }
+    
+}
+
+section.header .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(22, 24, 36, 0.8);
+    z-index: -1;
+}
+section.header svg{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+}
+section.header .s{
+    position: absolute;
+    bottom: 0;
+    background-color: #0083ff;
+    border-radius: 10px;
+    z-index: 999;
+    transform: translateY(500%);
+}
+section.header .span1{
+    left: 20%;
+    width: 100px;
+    height: 100px;
+    animation: up 6s 1s ease-in infinite;
+
+}
+section.header .span2{
+    left: 10%;
+    width: 80px;
+    height: 80px;
+    animation: up 6s 2s ease-in infinite;
+
+}
+section.header .span3{
+    left: 25%;
+    width: 50px;
+    height: 50px;
+    animation:up 6s 4s ease-in infinite;
+}
+section.header .span4{
+    left: 40%;
+    width: 70px;
+    height: 70px;
+    animation:up 6s 3s ease-in infinite;
+}
+section.header .span5{
+    left: 50%;
+    width: 60px;
+    height: 60px;
+    animation:up 6s 1s ease-in infinite;
+}
+section.header .span6{
+    left: 80%;
+    width: 40px;
+    height: 40px;
+    animation:up 6s 2s ease-in infinite;
+}
+section.header .span7{
+    left: 66%;
+    width: 100px;
+    height: 100px;
+    animation:up 6s 3s ease-in infinite;
+}
+section.header .span8{
+    left: 10%;
+    width: 35px;
+    height: 35px;
+    animation:up 6s 4s ease-in infinite;
+}
+section.header .span9{
+    left: 70%;
+    width: 100px;
+    height: 100px;
+    animation:up 6s 1s ease-in infinite;
+}
+section.header .span10{
+    left: 90%;
+    width: 35px;
+    height: 35px;
+    animation:up 6s 2s ease-in infinite;
+}
+section.header .span11{
+    left: 85%;
+    width: 45px;
+    height: 45px;
+    animation:up 6s 3s ease-in infinite;
+}
+section.header .span12{
+    left: 60%;
+    width: 65px;
+    height: 65px;
+    animation:up 6s 4s ease-in infinite;
+}
+section.header .span13{
+    left: 15%;
+    width: 40px;
+    height: 40px;
+    animation:up 6s 1s ease-in infinite;
+}
+section.header .span14{
+    left: 30%;
+    width: 60px;
+    height: 60px;
+    animation:up 6s 2s ease-in infinite;
+}
+section.header .span15{
+    left: 55%;
+    width: 55px;
+    height: 55px;
+    animation:up 6s 3s ease-in infinite;
+}
+@keyframes up{
+    0%{
+        opacity: 0.4;
+        transform: translateY(100%) rotate(0deg);
+
+    }
+    100%{
+        opacity: 0.4;
+        transform: translateY(-1200%) rotate(360deg);
+
+    }
+}
+/*******************************    End Header Section    *******************************/
+
+
