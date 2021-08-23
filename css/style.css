@@ -3,11 +3,6 @@
     margin: 0;
     box-sizing: border-box;
 }
-body{
-    height: 10000px;
-}
-
-
 a{
     text-decoration: none;
 }
@@ -39,30 +34,31 @@ ul,li{
     margin-right: 20px;
     width: fit-content;
     border-radius: 8px;
+    transition: 0.3s ease-in;
+}
+.navbar .collapse .links .nav-item.active{
+    color: #fff;
+    background-color: #0083ff;
+}
+.navbar .collapse .links .nav-item:hover{
+    background-color: #0083ff;
 }
 .navbar .collapse .links .nav-item .nav-link{
     color: #fff;
     border-radius: 10px;
     padding: 8px 15px;
-    transition: 0.3s ease-in;
 }
-
-.navbar .collapse .links .nav-item .active{
-    color: #fff;
-    background-color: #0083ff;
-}
-.navbar .collapse .links .nav-item :hover{
-    background-color: #0083ff;
- }
-.navbar .collapse .icons .fa-cart-plus{
+.navbar .collapse .icons i{
     width: 40px;
     height: 40px;
     text-align: center;
     border-radius: 50%;
     line-height: 40px;
     font-size: 15px;
-    background-color: #0083ff;
     transition: 0.4s;
+}
+.navbar .collapse .icons .fa-cart-plus{
+    background-color: #0083ff;
 }
 .navbar .collapse .icons .fa-cart-plus:hover{
     background-color: #0083ff;
@@ -102,7 +98,7 @@ section.header .info p{
     margin-top: 20px;
     margin-bottom:50px;
 }
-section.header .info a{
+section.header .info a:not(:last-child){
     font-size: 20px;
     padding: 8px 25px;
     border: 1px solid #fff;
@@ -126,14 +122,25 @@ section.header .info .btn-search{
     margin: 20px auto;
 }
 
+section.header .info p.down{
+    font-size:50px;
+    color: red;
+    margin-top: 50px;
+    animation: down 1s infinite alternate;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+
+
 @media (max-width : 767px){
     section.header .info h3{
         margin-top: 80px;
-        font-size: 25px;
+        font-size: 20px;
     }
     section.header .info h3 span.hi{
         margin-top: 80px;
-        font-size: 40px;
+        font-size: 30px;
         color: #0083ff;
     }
     section.header .info p{
@@ -292,5 +299,16 @@ section.header .span15{
     }
 }
 /*******************************    End Header Section    *******************************/
+
+
+
+
+
+
+
+
+
+
+
 
 
